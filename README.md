@@ -105,3 +105,7 @@ This method is essentially just an extension of the code-splitting pattern that 
 ### Decoupling your microfrontends
 
 The idea behind this method is to have each microfrontend bundle all their own dependencies and then only leverage a tiny number of dependencies to be resolved by the main application, usually `react`, `react-dom` and `react/jsx-runtime` but could include for example `react-router` or `react-router-dom`. If you were previously relying on global providers then you'd have to move those up into your page, as you'd no longer be able to access them from the main application. But this is the normal cost of making microfrontends.
+
+### How to develop?
+
+The example doesn't give a good development experience. I've avoided adding that because it felt like it'd muddy the example. What could be done is simply having each package start up their own application with the exception that they'll reference the current package being developed as source code. Using `vite` you can have it both as a development server and bundler.
