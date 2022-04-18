@@ -1,0 +1,24 @@
+{
+  "name": "@example/micro",
+  "private": true,
+  "version": "0.0.0",
+  "types": "src/main.tsx",
+  "module": "dist/index.js",
+  "scripts": {
+    "build": "vite build",
+    "preview": "serve dist -l 3001 --cors"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.24",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "serve": "^13.0.2",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.2"
+  }
+}

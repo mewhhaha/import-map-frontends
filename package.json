@@ -1,0 +1,10 @@
+{
+  "name": "main",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "pnpm build -r",
+    "preview": "pnpm preview -r --parallel"
+  },
+  "devDependencies": {}
+}
