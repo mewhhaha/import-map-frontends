@@ -22,7 +22,7 @@ pnpm build
 pnpm preview
 ```
 
-There are a few things happening here, the main application is being served at http://localhost:4174 and a microfrontend (JavaScript) is being served at http://localhost:3001. If you go to the main application at http://localhost:4174 you can filter the network requests by "index.js" and you'll see one of them being loaded from http://localhost:3001. This is the reference made by the import map located in [/app/index.html](/app/index.html).
+There are a few things happening here, the main application is being served at http://localhost:3000 and a microfrontend (JavaScript) is being served at http://localhost:3001. If you go to the main application at http://localhost:3000 you can filter the network requests by "index.js" and you'll see one of them being loaded from http://localhost:3001. This is the reference made by the import map located in [/app/index.html](/app/index.html).
 
 To try out the decoupled nature of these two code bases, you can update something in [/micro/src/main.tsx] and then rebuild. If you've run the previous commands then you are already serving the built artifact so you simply have to refresh the page after you've built.
 
