@@ -40,7 +40,7 @@ It's not anything new, but it's _easy_. And sometimes easy is amazing.
 
 ## How does this work?
 
-The original idea is basically the same as lazy-loading JavaScript from a different location that can be deployed separately. This is quite easy, but the issue occurs when attempting to pull in different versions of `react` where the whole application will break. This _can_ be resolved by simply referencing the same `react` from a CDN somewhere, however this risks breaking the application if they start to accidentally reference different versions. Instead in this example we keep the imports form `react` and `react-dom` external. Below is what's built for the `@example/micro` package, and you can see that the `react` imports have remained in the built bundle.
+The original idea is basically the same as lazy-loading JavaScript from a different location that can be deployed separately. This is quite easy, but the issue occurs when attempting to pull in different versions of `react` where the whole application will break. This _can_ be resolved by simply referencing the same `react` from a CDN somewhere, however this risks breaking the application if they start to accidentally reference different versions. Instead in this example we keep the imports from `react` and `react-dom` external. Below is what's built for the `@example/micro` package, and you can see that the `react` imports have remained in the built bundle.
 
 ```js
 import { useState } from "react";
